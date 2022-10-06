@@ -1,7 +1,8 @@
 const mongoose=require('mongoose');
 const dataSchema=new mongoose.Schema({
     data1:{
-        required:true
+        required:true,
+        type:String
     },
     data2:{
         type:Number,

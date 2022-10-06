@@ -8,7 +8,7 @@ app.use(cors());
 //Inbuilt Middleware Used:
 app.use(express.json());
 
-//NOTE-> In this Model I am considering Data-1 as an Object of Data
+//NOTE-> In this Model I am considering Data-1 as Name
 //and Data-2 as an ID for identification of the Object
 
 //Connection to DB :
