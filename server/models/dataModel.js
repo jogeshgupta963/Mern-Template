@@ -6,7 +6,8 @@ const dataSchema=new mongoose.Schema({
     },
     data2:{
         type:Number,
-        required:true
+        required:true,
+        unique:true
     }
 })
 

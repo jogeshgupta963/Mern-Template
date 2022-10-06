@@ -14,9 +14,6 @@ app.use(express.json());
 //Connection to DB :
 require('./config/connection');
 
-//Importing the Model :
-const dataModel=require('./models/dataModel');
-
 //Importing Controller Functions :
 const getFn=require('./controllers/GET');
 const postFn=require('./controllers/POST');
@@ -36,5 +33,5 @@ app.put('/update/:id',putFn);
 //DELETE Operation :
 app.delete('/delete/:id',deleteFn);
 
-const port=proces.env.PORT||3001;
+const port=process.env.PORT||3001;
 app.listen(port,()=>{console.log('Server is running on 3001 || PORT...')})

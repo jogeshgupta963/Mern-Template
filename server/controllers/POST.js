@@ -1,3 +1,6 @@
+//Importing the Model :
+const dataModel=require('../models/dataModel');
+
 const POST=async(req,res)=>{
 const recievedDataSet=await req.body.dataobject;
 const recievedDatafromparams=await req.params.datafromparams;
