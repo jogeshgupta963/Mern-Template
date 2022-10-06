@@ -8,14 +8,11 @@ app.use(cors());
 //Inbuilt Middleware Used:
 app.use(express.json());
 
-//NOTE-> In this Model I am considering Data-1 as an Object of Data
+//NOTE-> In this Model I am considering Data-1 as Name
 //and Data-2 as an ID for identification of the Object
 
 //Connection to DB :
 require('./config/connection');
-
-//Importing the Model :
-const dataModel=require('./models/dataModel');
 
 //Importing Controller Functions :
 const getFn=require('./controllers/GET');
@@ -36,5 +33,5 @@ app.put('/update/:id',putFn);
 //DELETE Operation :
 app.delete('/delete/:id',deleteFn);
 
-const port=proces.env.PORT||3001;
+const port=process.env.PORT||3001;
 app.listen(port,()=>{console.log('Server is running on 3001 || PORT...')})
