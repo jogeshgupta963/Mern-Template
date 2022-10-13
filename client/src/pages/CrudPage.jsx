@@ -68,6 +68,8 @@ const Page = () => {
 
   return (
     <div>
+
+      <div style={{borderStyle:'solid',borderRadius:'10px',marginLeft:'35vw',marginRight:'35vw',padding:'3vw'}}>
         <h1>CRUD Page</h1>
         <div>
           <label htmlFor="name">Enter your name</label>
@@ -80,7 +82,12 @@ const Page = () => {
         </div><br/>
           <button onClick={()=>{postFn(name)}}>Save Name</button>
           {postSuccessMsg?<><h2>Saved to DB </h2></>:<></>}
+          </div>
           
+          <br/>
+          <br/>
+
+          <div style={{borderStyle:'solid',borderRadius:'10px',marginLeft:'35vw',marginRight:'35vw',padding:'3vw'}}>
           <h1>Update Section</h1>
            <div>
           <label htmlFor="name">Enter your Updated name</label>
@@ -94,10 +101,12 @@ const Page = () => {
 <br/>
           <button onClick={()=>{updateFn(name)}}>Update Name</button>
           {putSuccessMsg?<><h2>Updated in DB</h2></>:<></>}
+          </div>
         <br/>
         <br/>
 
 
+        <div style={{borderStyle:'solid',borderRadius:'10px',marginLeft:'35vw',marginRight:'35vw',padding:'3vw'}}>
       <div>
         <h1>Delete Section</h1>
           <label htmlFor="id">Enter ID to Delete</label>
@@ -105,6 +114,7 @@ const Page = () => {
         </div><br/>
           <button onClick={()=>{deleteFn()}}>Delete ID</button>
           {delMsg?<><h2>Deleted from DB</h2></>:<></>}
+          </div>
 <br/>
 <br/>
 
