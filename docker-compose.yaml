@@ -11,15 +11,15 @@ services:
     volumes:
       - ./server:/app
       - /app/node_modules
-    depends_on:
-      - mongo
+    # depends_on:
+    #   - mongo
     env_file: ./server/.env
-  mongo:
-    image: mongo
-    volumes:
-      - data-volume:/data/db
-    ports:
-      - 27017:27017
+  # mongo:
+  #   image: mongo
+  #   volumes:
+  #     - data-volume:/data/db
+  #   ports:
+  #     - 27017:27017
   client:
     build:
       context: ./client
